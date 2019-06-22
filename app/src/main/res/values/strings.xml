@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">شركة الجنيدي لتصنيع الالبان</string>
+    <string name="title_activity_customer_data">Main2Activity</string>
+    <string name="title_activity_customers_data">customers_data</string>
+    <string name="tab_text_1">معلومات الزبون</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment userinfo</string>
+    <string name="title_activity_customer_data_page">Customer_dataPage</string>
+
+</resources>

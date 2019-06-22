@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".customers.CustomerHomePage">
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".salesman_customers">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+        >
+            <GridLayout
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+            >
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="2dp"
+                        android:layout_margin="2dp"
+
+                >
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <TextView
+                                android:id="@+id/tv_customerNameFragment"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="شركة الجنيدي لتصنيع الالبان"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ed3926"
+                                android:textSize="18sp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-black"
+                        />
+
+
+                        <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                        >
+
+
+
+
+                            <LinearLayout
+
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                            >
+                                <TextView
+                                        android:id="@+id/tv_LastVisitFrag"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="اخر زيارة"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/wantvisit"
+                                        android:drawablePadding="2dp"
+                                />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                        android:id="@+id/tv_LastSalesDate"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="اخر عميلة بيع"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/targted"
+                                        android:drawablePadding="2dp"
+                                />
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                            >
+                                <TextView
+                                        android:id="@+id/tv_ContactPerson1"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="الشخص المسؤول"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                        android:id="@+id/tv_AllowCreditSales"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="طريقة الدفع"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                        android:id="@+id/tv_CreditBalanceFrage"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="رصيد الزبون"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                        android:id="@+id/tv_CreditLimitFrag"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="سقف الزبون"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                      android:id="@+id/tv_CreditPeriodFrag"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="مدة الذمة"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                        android:id="@+id/tv_MaxChequePeriodFrag"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="مدة الشيك"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                       android:id="@+id/tv_XFrag"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="X"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerInParent="true"
+                            >
+                                <TextView
+                                         android:id="@+id/tv_YFrag"
+                                        android:layout_gravity="center"
+                                        android:text="0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                />
+                                <TextView
+                                        android:layout_gravity="right"
+                                        android:text="Y"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:drawableRight="@drawable/remainvisit"
+                                        android:drawablePadding="2dp"
+                                />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

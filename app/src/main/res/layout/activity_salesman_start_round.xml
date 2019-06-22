@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context=".salesman_start_round">
+
+    <ImageView
+
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:src="@drawable/startroundac"
+
+    />
+    <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="بدء رحلة البيع"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4157bc"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+    />
+    <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|textEmailAddress"
+            android:ems="10"
+            android:id="@+id/tv_startRoundSymbol"
+            android:drawableRight="@drawable/handricon"
+            android:hint="ادخل رمز بداية المسار"
+            android:layout_marginTop="25dp"
+            android:textColor="#0d0101"
+            android:paddingLeft="0dp"
+            android:drawablePadding="0dp"
+            android:textColorHint="#999"
+            android:textAlignment="center"/>
+    <TextView
+            android:id="@+id/tv_Errorstartround"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="شركة الجنيدي لتصنيع الالبان"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ed3926"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-black"
+            android:visibility="invisible"
+    />
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv_startRoundSymbol"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+    >
+        <Button
+                android:layout_marginLeft="10dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+
+                android:text="بدء الرحلة"
+                android:id="@+id/btn_StartRound"
+                android:background="@drawable/selector"
+                android:layout_gravity="center_horizontal"
+                android:textSize="19sp"
+                android:textColor="#FFFFFF"
+
+        />
+        <Button
+                android:id="@+id/btn_ExistRoundStart"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+                android:text="خروج"
+                android:background="#e05332"
+                android:layout_gravity="center_horizontal"
+                android:textSize="19sp"
+                android:textColor="#FFFFFF"
+
+
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>

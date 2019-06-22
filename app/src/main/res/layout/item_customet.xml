@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+>
+
+
+<LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <TextView
+                android:textColor="#ed3926"
+                  android:id="@+id/tv_RequstedItem"
+                android:text="1111111111111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="0dp"
+                android:layout_gravity="center"
+        />
+        <TextView
+                 android:id="@+id/tv_AvialbeItem"
+
+                android:text="1111111111111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+
+
+        />
+        <TextView
+                android:id="@+id/tv_ItemName"
+                android:text="اسم الصنف"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingRight="10dp"
+
+
+        />
+        <TextView
+                android:id="@+id/tv_ItemBarcode"
+                android:text="Barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+               android:layout_gravity="right"
+
+        />
+
+
+    </LinearLayout>
+</LinearLayout>
